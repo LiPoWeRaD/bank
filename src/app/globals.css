@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url("/fonts/Lexend-Thin.ttf"); 
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --background-image: url("/bank.png");
+  --background-price: url("/price.png");
+  --background-abstractDesign: url("/abstractDesign.png");
+}
+
+@theme {
+  --font-display: "Lexend", Helvetica, sans-serif;
+  --bg-image: var(--background-image);
+  --bg-price: var(--background-price);
+  --bg-abstractDesign: var(--background-abstractDesign);
+  --color-white90: #E4E4E7;
+  --color-green60: #CAFF33;
+  --color-green65: #D1FF4D;
+  --color-grey10:#22251B;
+  --color-grey11: #1C1C1C;
+  --color-grey15: #262626;
+  --color-grey20: #1A1A1A;
+  --color-grey30: #191919;
+  
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Lexend", Helvetica, sans-serif;
+}
+
+.bg-custom-image {
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+}
