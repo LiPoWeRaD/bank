@@ -33,7 +33,7 @@ const SignIn = () => {
                     <button type="submit" className="border-b-[2px] border-white text-[18px] font-light w-fit self-center cursor-pointer">Forgot Password?</button>
                     <div className="flex flex-col gap-[24px] justify-center">
                         <ButtonGreen text="Sign Up" className="w-full" />
-                        <ButtonGreen text="Login" bg={false} bgColor="bg-grey15" className="w-full" />
+                        <ButtonGreen href="/login" text="Login" bg={false} bgColor="bg-grey15" className="w-full text-center" />
                         <div className="flex gap-x-4 items-center">
                             <span className="w-full border-b-[2px] border-white"></span>
                             <span className="whitespace-nowrap">Or Continue with</span>

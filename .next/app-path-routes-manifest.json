@@ -1,10 +1,10 @@
 {
-  "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/login/page": "/login",
   "/careers/page": "/careers",
-  "/signIn/page": "/signIn",
   "/about/page": "/about",
+  "/_not-found/page": "/_not-found",
+  "/login/page": "/login",
   "/page": "/",
-  "/security/page": "/security"
+  "/security/page": "/security",
+  "/signIn/page": "/signIn"
 }

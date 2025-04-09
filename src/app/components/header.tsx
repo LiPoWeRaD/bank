@@ -65,10 +65,14 @@ const Header = () => {
                                     <Link href="/security" className="block w-full">Security</Link>
                                 </li>
                             </ul>
-                            <div className="flex flex-col p-4 gap-3 border-t border-grey15">
-                                <button className="w-full text-left p-2 cursor-pointer">Sign in</button> 
-                                <ButtonGreen text="Login" className="w-full" />
-                            </div>
+                            <ul className="flex flex-col p-4 gap-3 border-t border-grey15">
+                                <li>
+                                    <Link onClick={() => setOpen(false)} href="/signIn" className="w-full text-left p-2 cursor-pointer">Sign in</Link> 
+                                </li>
+                                <li>
+                                    <Link onClick={() => setOpen(false)} href="/login" className="w-full text-left p-2 cursor-pointer">Login</Link>
+                                </li>
+                            </ul>
                         </div>
                     )}
                 </section>

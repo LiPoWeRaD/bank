@@ -38,7 +38,7 @@ const OpeningsCard:FC<OpeningsCardProps> = ({ title, info1, info2, text, li1, li
                     <li className="flex items-center gap-x-[11px] text-[18px] font-light"><Portfel />{li5}</li>
                 </ul>
             </div>
-            <div>
+            <div className="flex justify-center sm:justify-start">
                 <ButtonGreen text="Apply now" />
             </div>
         </div>

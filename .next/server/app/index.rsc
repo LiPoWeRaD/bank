@@ -1,19 +1,20 @@
 1:"$Sreact.fragment"
-2:I[1317,["874","static/chunks/874-6be9447f8c272205.js","177","static/chunks/app/layout-3b08fdaa9045bef4.js"],"default"]
+2:I[1317,["874","static/chunks/874-6be9447f8c272205.js","177","static/chunks/app/layout-5e8ca36f7c4d65b9.js"],"default"]
 3:I[7555,[],""]
 4:I[1295,[],""]
-5:I[8590,["874","static/chunks/874-6be9447f8c272205.js","177","static/chunks/app/layout-3b08fdaa9045bef4.js"],"default"]
-6:I[894,[],"ClientPageRoot"]
-7:I[845,["766","static/chunks/766-b901655e9eaaba3b.js","874","static/chunks/874-6be9447f8c272205.js","974","static/chunks/app/page-4f11e135a25a2cba.js"],"default"]
-a:I[9665,[],"OutletBoundary"]
-d:I[9665,[],"ViewportBoundary"]
-f:I[9665,[],"MetadataBoundary"]
-11:I[6614,[],""]
+5:I[6874,["874","static/chunks/874-6be9447f8c272205.js","345","static/chunks/app/not-found-0774866480cd3470.js"],""]
+6:I[8590,["874","static/chunks/874-6be9447f8c272205.js","177","static/chunks/app/layout-5e8ca36f7c4d65b9.js"],"default"]
+7:I[894,[],"ClientPageRoot"]
+8:I[845,["766","static/chunks/766-b901655e9eaaba3b.js","874","static/chunks/874-6be9447f8c272205.js","974","static/chunks/app/page-5b6743c0d3f963bd.js"],"default"]
+b:I[9665,[],"OutletBoundary"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[9665,[],"MetadataBoundary"]
+12:I[6614,[],""]
 :HL["/LiPoWeRaDbank/_next/static/css/9f923af6e4bbd0d8.css","style"]
-0:{"P":null,"b":"FzQHKLrOEdPoDaF0JG0eJ","p":"/LiPoWeRaDbank","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/LiPoWeRaDbank/_next/static/css/9f923af6e4bbd0d8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_cc5245 __variable_99b3db antialiased bg-grey40","children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L5",null,{}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],"$undefined",null,["$","$La",null,{"children":["$Lb","$Lc",null]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","L2AQGcU4x3LuoXvKi1yO5",{"children":[["$","$Ld",null,{"children":"$Le"}],null]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
-8:{}
+0:{"P":null,"b":"fAIAruW4seFzYqpQENLhu","p":"/LiPoWeRaDbank","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/LiPoWeRaDbank/_next/static/css/9f923af6e4bbd0d8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_cc5245 __variable_99b3db antialiased bg-grey40","children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"flex mt-[50px] 2xl:mt-[108px] flex-col justify-between items-center","children":["$","section",null,{"className":"container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] px-[30px] py-5 mx-auto flex flex-col xl:flex-row justify-between gap-y-[50px]","children":[["$","h1",null,{"className":"text-2xl md:text-5xl text-center","children":"Not Found Page"}],["$","$L5",null,{"href":"/","className":"px-[30px] py-3.5 rounded-[84px] cursor-pointer bg-green60 text-grey11 w-fit self-center","children":"Back to Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L6",null,{}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L7",null,{"Component":"$8","searchParams":{},"params":{},"promises":["$@9","$@a"]}],"$undefined",null,["$","$Lb",null,{"children":["$Lc","$Ld",null]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","792NKVjdhcjgexD0bDugZ",{"children":[["$","$Le",null,{"children":"$Lf"}],null]}],["$","$L10",null,{"children":"$L11"}]]}],false]],"m":"$undefined","G":["$12","$undefined"],"s":false,"S":true}
 9:{}
-e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-b:null
+a:{}
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 c:null
-10:[["$","title","0",{"children":"Create Next App"}],["$","meta","1",{"name":"description","content":"Generated by create next app"}],["$","link","2",{"rel":"icon","href":"/LiPoWeRaDbank/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+d:null
+11:[["$","title","0",{"children":"Create Next App"}],["$","meta","1",{"name":"description","content":"Generated by create next app"}],["$","link","2",{"rel":"icon","href":"/LiPoWeRaDbank/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]

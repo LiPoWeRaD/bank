@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   basePath: "/LiPoWeRaDbank",
-  output: "export",  // <=== enables static exports
+  output: "export", 
   reactStrictMode: true,
 };
 
