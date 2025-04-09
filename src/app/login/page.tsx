@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import TestimonialsCarousel from "../components/carusel"
 import Facebook2 from "../svg/facebook2"
 import Google from "../svg/google"
@@ -9,6 +10,8 @@ import ButtonGreen from "../ul/buttonGreen"
 
 
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
+
     return (
         <main className="flex mt-[50px] 2xl:mt-[108px] flex-col justify-between items-center">
             <section className="relative z-10 container px-[150px] py-[100px] mb:-[50px] md:mb-[100px] 2xl:mb-[150px] mx-auto flex flex-col justify-center items-center gap-x-[120px] rounded-3xl bg-grey11">
@@ -22,16 +25,16 @@ const Login = () => {
                 </p>
                 <form className="flex flex-col gap-y-[40px] z-10 " action="">
                     <div className="flex flex-col items-center justify-center md:flex-row md:items-start gap-[30px]">
-                        <input type="text" placeholder="Enter your Email" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white" />
-                        <div className="flex justify-between items-center px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white">
-                            <input type="password" placeholder="Enter your Password" className="" />
-                            <button><Union /></button>
+                        <input type="text" placeholder="Enter your Email" className="px-5 py-3 rounded-full w-full md:w-[calc(50%-15px)] border border-grey35 bg-grey20 text-white" />
+                        <div className="relative flex justify-between items-center   rounded-full border border-grey35 bg-grey20 text-white w-full md:w-[calc(50%-15px)]">
+                            <input type={showPassword ? "text" : "password"} placeholder="Enter your Password" className="px-5 pr-12 py-3 w-full rounded-full"  />
+                            <button onClick={() => setShowPassword(!showPassword)} className="absolute right-5 cursor-pointer" type="button"><Union /></button>
                         </div>
                     </div>
                     <button type="submit" className="border-b-[2px] border-white text-[18px] font-light w-fit self-center cursor-pointer">Forgot Password?</button>
-                    <div className="flex flex-col gap-[24px] justify-center">
-                        <ButtonGreen text="Login" className="w-full" />
-                        <ButtonGreen href="/signIn" text="Sign Up" bg={false} bgColor="bg-grey15" className="w-full text-center" />
+                    <div className="flex flex-col gap-[24px] justify-center ">
+                        <ButtonGreen text="Login" className="w-full " />
+                        <ButtonGreen href="/signIn" text="Sign Up" bg={false} bgColor="bg-grey15" className="w-full text-center " />
                         <div className="flex gap-x-4 items-center">
                             <span className="w-full border-b-[2px] border-white"></span>
                             <span className="whitespace-nowrap">Or Continue with</span>

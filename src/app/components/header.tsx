@@ -38,7 +38,7 @@ const Header = () => {
                     <li> 
                         <Link href="/signIn">Sign in</Link> 
                     </li> 
-                    <ButtonGreen text="Login" href="/login" />
+                    <ButtonGreen  text="Login" href="/login" />
                 </ul>
             </section>
             {/* Бургер меню */}
@@ -53,23 +53,23 @@ const Header = () => {
                         <div className="absolute top-full right-0 mt-2 w-[200px] bg-grey11 rounded-2xl border border-grey15 shadow-lg z-[999]">
                             <ul className="flex flex-col items-start p-4 gap-y-2">
                                 <li className={`w-full p-3 rounded-full ${path === "/" ? "bg-grey15" : ""}`}>
-                                    <Link href="/" className="block w-full">Home</Link>
+                                    <Link onClick={() => setOpen(false)} href="/" className="block w-full">Home</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/careers" ? "bg-grey15" : ""}`}>
-                                    <Link href="/careers" className="block w-full">Careers</Link>
+                                    <Link onClick={() => setOpen(false)} href="/careers" className="block w-full">Careers</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/about" ? "bg-grey15" : ""}`}>
-                                    <Link href="/about" className="block w-full">About</Link>
+                                    <Link onClick={() => setOpen(false)} href="/about" className="block w-full">About</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/security" ? "bg-grey15" : ""}`}>
-                                    <Link href="/security" className="block w-full">Security</Link>
+                                    <Link onClick={() => setOpen(false)} href="/security" className="block w-full">Security</Link>
                                 </li>
                             </ul>
                             <ul className="flex flex-col p-4 gap-3 border-t border-grey15">
-                                <li>
+                                <li className={`w-full p-3 rounded-full ${path === "/signIn" ? "bg-grey15" : ""}`}>
                                     <Link onClick={() => setOpen(false)} href="/signIn" className="w-full text-left p-2 cursor-pointer">Sign in</Link> 
                                 </li>
-                                <li>
+                                <li className={`w-full p-3 rounded-full ${path === "/login" ? "bg-grey15" : ""}`}>
                                     <Link onClick={() => setOpen(false)} href="/login" className="w-full text-left p-2 cursor-pointer">Login</Link>
                                 </li>
                             </ul>

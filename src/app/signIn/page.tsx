@@ -29,7 +29,7 @@ const SignIn = () => {
                         <input type="text" placeholder="Enter First Name" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
                         <input type="text" placeholder="Enter Last Name" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
                         <input type="text" placeholder="Enter your Email" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
-                        <div className="relative flex justify-between items-center   rounded-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]">
+                        <div className="relative flex justify-between items-center   rounded-full border border-grey35 bg-grey20 text-white w-full md:w-[calc(50%-15px)]">
                             <input type={showPassword ? "text" : "password"} placeholder="Enter your Password" className="px-5 pr-12 py-3 w-full rounded-full"  />
                             <button onClick={() => setShowPassword(!showPassword)} className="absolute right-5 cursor-pointer" type="button"><Union /></button>
                         </div>

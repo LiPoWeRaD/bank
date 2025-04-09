@@ -2,9 +2,9 @@
   "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
   "/login/page": "/login",
-  "/signIn/page": "/signIn",
+  "/careers/page": "/careers",
   "/about/page": "/about",
+  "/signIn/page": "/signIn",
   "/security/page": "/security",
-  "/page": "/",
-  "/careers/page": "/careers"
+  "/page": "/"
 }
