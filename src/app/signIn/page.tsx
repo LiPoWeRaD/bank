@@ -15,7 +15,7 @@ const SignIn = () => {
 
     return (
         <main className="flex mt-[50px] 2xl:mt-[108px] flex-col justify-between items-center">
-            <section className="relative z-10 container px-[150px] py-[100px] mb:-[50px] md:mb-[100px] 2xl:mb-[150px] mx-auto flex flex-col justify-center items-center gap-x-[120px] rounded-3xl bg-grey11">
+            <section className="relative z-10 container md:px-[150px] py-[100px] mb:-[50px] md:mb-[100px] 2xl:mb-[150px] mx-auto flex flex-col justify-center items-center gap-x-[120px] rounded-3xl bg-grey11">
                 <div className={`absolute top-0 right-0 w-full h-full bg-[image:var(--bg-abstractDesign)] bg-no-repeat bg-[length:250px_250px] [transform:scaleX(-1)] z-0`}></div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[image:var(--bg-login)] saturate-0 opacity-10 rounded-3xl z-0"></div>
                 <h2 className="z-10 mb-3.5 text-2xl md:text-5xl text-center md:text-left text-green60">
