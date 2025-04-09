@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 interface CardProps {
@@ -10,7 +11,7 @@ interface CardProps {
 const ProductsCard = ({ img, name, description, border = false }: CardProps) => {
     return (
         <div className={`flex py-[50px] xl:py-0 xl:px-[50px] flex-col justify-center items-center gap-2 ${border ? 'border-y-2 xl:border-y-0 xl:border-x-2 border-grey15' : ''}`}>
-            <img className="mb-[30px]" src={img} alt={name} />
+            <Image className="mb-[30px]" src={img} alt={name} width={200} height={0} />
             <h3 className="text-center text-[24px]">{name}</h3> 
             <p className="text-[18px] font-light text-center">{description}</p>
         </div>

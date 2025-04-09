@@ -5,7 +5,6 @@ import FrequentlyCard from "../ul/frequentlyCard"
 
 const FrequentlyAskedQuestions = () => {
 
-    const [frequentlyShadow, setFrequentlyShadow] = useState(true);
     const [showAllCards, setShowAllCards] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
 
@@ -40,24 +39,24 @@ const FrequentlyAskedQuestions = () => {
             <FrequentlyCard 
                 title="How can I access my accounts online?"
                 text={`Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.`}
-                shadow = {(isDesktop && frequentlyShadow) && !showAllCards}
+                shadow = {isDesktop && !showAllCards}
             />
             <FrequentlyCard 
                 title="Are my transactions and personal information secure?"
                 text={`At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.`}
-                shadow = {frequentlyShadow && !showAllCards}
+                shadow = {!showAllCards}
             />
             {showAllCards && (
                 <>
                 <FrequentlyCard 
                     title="Can I transfer money between accounts?"
                     text={`lorem secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you`}
-                    shadow = {isDesktop ? frequentlyShadow : false}
+                    shadow = {isDesktop}
                 />
                 <FrequentlyCard 
                     title="Can I transfer money between accounts?"
                     text={`lorem secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you`}
-                    shadow = {frequentlyShadow}
+                    shadow = {true}
                 />
                 </>
             )}

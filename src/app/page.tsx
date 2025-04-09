@@ -23,6 +23,7 @@ import paymentSolutions from "../app/assets/paymentSolutions.png";
 import PlusIcon from "./svg/plusIcon";
 import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions";
 import StartCareer from "./components/startCareer";
+import Image from "next/image";
 
 
 const Plus = () => {
@@ -53,15 +54,15 @@ export default function Home() {
             Empowering Your <span className="text-green60">Financial Journey</span>
           </h2>
           <p className="mb-[50px] text-sm font-light md:text-[18px]">
-            At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses 
-            to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.
+            At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. 
+            We are committed to delivering personalized and innovative services that prioritize our customers&apos; needs.
           </p>
           <ButtonGreen text="Open Account" />
         </div>
         <div className="relative flex justify-center xl:justify-end items-start ">
           <Plus />
           <Transaction name1="Joel Kenley" price1="$68.00" name2="Mark Smith" price2="$52.00" name3="Lenen Roy" price3="$99.00" />
-          <img className="hidden sm:block -ml-[-180px] sm:-ml-[160px] xl:-ml-48 2xl:-ml-52 -z-20  w-[250px] 2xl:w-[300px]" src={arrow.src} alt="" />
+          <Image className="hidden sm:block -ml-[-180px] sm:-ml-[160px] xl:-ml-48 2xl:-ml-52 -z-20  w-[250px] 2xl:w-[300px]" src={arrow.src} alt="" width={100} height={0} /> 
         </div>
       </section>
       <section className="container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] px-[30px] py-5 mx-auto">

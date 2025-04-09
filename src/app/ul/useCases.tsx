@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { FC } from "react"
 
 interface UseCasesProps {
@@ -21,19 +22,19 @@ const UseCases:FC<UseCasesProps> = ({ img1, title1, img2, title2, img3, title3, 
         {/* Карточки с одинаковой шириной */}
         <div className="flex flex-wrap w-full gap-5 z-10">
             <div className="flex p-[30px] flex-col items-center gap-y-5 bg-grey20 rounded-2xl flex-1 min-w-[200px]">
-                <img src={img1} alt="" />
+                <Image src={img1} alt="" width={100} height={0} />
                 <p className="text-[20px] text-center">{title1}</p>
             </div>
             <div className="flex p-[30px] flex-col items-center gap-y-5 bg-grey20 rounded-2xl flex-1 min-w-[200px]">
-                <img src={img2} alt="" />
+                <Image src={img2} alt="" width={100} height={0} />
                 <p className="text-[20px] text-center">{title2}</p>
             </div>
             <div className="flex p-[30px] flex-col items-center gap-y-5 bg-grey20 rounded-2xl flex-1 min-w-[200px]">
-                <img src={img3} alt="" />
-                <p className="text-[20px] text-center">{title3}</p>
+                <Image src={img3} alt="" width={100} height={0} />
+                <p className="text-[20px] text-center">{title3}</p> 
             </div>
             <div className="flex p-[30px] flex-col items-center gap-y-5 bg-grey20 rounded-2xl flex-1 min-w-[200px]">
-                <img src={img4} alt="" />
+                <Image src={img4} alt="" width={100} height={0} />
                 <p className="text-[20px] text-center">{title4}</p>
             </div>
         </div>

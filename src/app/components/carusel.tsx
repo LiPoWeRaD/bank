@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import ArrowLeft from '../svg/arrowLeft'; // Предполагаем, что у вас есть такой компонент
 import quration2 from '../assets/quration.svg';
-import TestimonialsCard from '../ul/testimonialsCard';
 import Quotation from '../svg/quotation';
+import Image from 'next/image';
 
 const TestimonialsCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -79,7 +79,7 @@ const TestimonialsCarousel = () => {
                   <div className="flex gap-x-2 sm:gap-x-3 md:gap-x-4 items-center justify-between">
                     <span className="w-full border-b-[1px] sm:border-b-[2px] border-grey15"></span>
                     <span className="text-sm sm:text-base hidden lg:block"><Quotation /></span>
-                    <span className="text-sm sm:text-base lg:hidden"><img src={quration2.src} alt="" /></span>
+                    <span className="text-sm sm:text-base lg:hidden"><Image src={quration2.src} alt="quration" width={20} height={20} /></span>
                     <span className="w-full border-b-[1px] sm:border-b-[2px] border-grey15"></span>
                   </div>
                   <p className="text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-center font-light flex-grow">
@@ -128,7 +128,7 @@ const TestimonialsCarousel = () => {
                 <div className="flex gap-x-4 items-center justify-between">
                   <span className="w-full border-b-[2px] border-grey15"></span>
                   <span className="text-sm sm:text-base hidden xl:block"><Quotation /></span>
-                  <span className="text-sm sm:text-base xl:hidden w-full -mx-14 flex justify-center"><img src={quration2.src} alt="" /></span> 
+                  <span className="text-sm sm:text-base xl:hidden w-full -mx-14 flex justify-center"><Image src={quration2.src} alt="quration" width={20} height={20} /></span> 
                   <span className="w-full border-b-[2px] border-grey15"></span>
                 </div>
                 <p className="text-[16px] sm:text-[18px] text-center font-light flex-grow">

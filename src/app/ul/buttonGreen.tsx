@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 interface ButtonGreenProps {
@@ -12,7 +13,7 @@ const ButtonGreen = ({ text, bg = true, bgColor, className, href }: ButtonGreenP
     return href === undefined ? (
         <button className={"px-[30px] py-3.5 rounded-[84px] cursor-pointer " + (bg ? "bg-green60 text-grey11" : bgColor ? bgColor : "bg-transparent") + " " + className}>{text}</button>
     ) : (
-        <a href={href} className={"px-[30px] py-3.5 rounded-[84px] cursor-pointer " + (bg ? "bg-green60 text-grey11" : bgColor ? bgColor : "bg-transparent") + " " + className}>{text}</a>
+        <Link href={href} className={"px-[30px] py-3.5 rounded-[84px] cursor-pointer " + (bg ? "bg-green60 text-grey11" : bgColor ? bgColor : "bg-transparent") + " " + className}>{text}</Link>
     )
 } 
 

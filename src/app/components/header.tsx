@@ -7,6 +7,7 @@ import Logo from "../ul/logo"
 import ButtonGreen from "../ul/buttonGreen"
 import { useState } from "react"
 import Menu from "../svg/menu"
+import Link from "next/link"
 
 
 const Header = () => {
@@ -21,21 +22,21 @@ const Header = () => {
                 <Logo imgSvg1={<Logo_1 />} imgSvg2={<Logo_1_1 />} />
                 <ul className="flex items-center">
                     <li className={`p-3 rounded-full ${path === "/" ? "bg-grey15" : ""}`}>
-                        <a href="/">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li className={`p-3 rounded-full ${path === "/careers" ? "bg-grey15" : ""}`}>
-                        <a href="/careers">Careers</a>
+                        <Link href="/careers">Careers</Link>
                     </li>
                     <li className={`p-3 rounded-full ${path === "/about" ? "bg-grey15" : ""}`}>
-                        <a href="/about">About</a>
+                        <Link href="/about">About</Link>
                     </li>
                     <li className={`p-3 rounded-full ${path === "/security" ? "bg-grey15" : ""}`}>
-                        <a href="/security">Security</a>
+                        <Link href="/security">Security</Link>
                     </li>
                 </ul>
                 <ul className="flex items-center gap-[30px]">
-                    <li>
-                        <a  href="/signIn">Sign in</a>    
+                    <li> 
+                        <Link href="/signIn">Sign in</Link> 
                     </li> 
                     <ButtonGreen text="Login" href="/login" />
                 </ul>
@@ -52,16 +53,16 @@ const Header = () => {
                         <div className="absolute top-full right-0 mt-2 w-[200px] bg-grey11 rounded-2xl border border-grey15 shadow-lg z-[999]">
                             <ul className="flex flex-col items-start p-4 gap-y-2">
                                 <li className={`w-full p-3 rounded-full ${path === "/" ? "bg-grey15" : ""}`}>
-                                    <a href="/" className="block w-full">Home</a>
+                                    <Link href="/" className="block w-full">Home</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/careers" ? "bg-grey15" : ""}`}>
-                                    <a href="/careers" className="block w-full">Careers</a>
+                                    <Link href="/careers" className="block w-full">Careers</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/about" ? "bg-grey15" : ""}`}>
-                                    <a href="/about" className="block w-full">About</a>
+                                    <Link href="/about" className="block w-full">About</Link>
                                 </li>
                                 <li className={`w-full p-3 rounded-full ${path === "/security" ? "bg-grey15" : ""}`}>
-                                    <a href="/security" className="block w-full">Security</a>
+                                    <Link href="/security" className="block w-full">Security</Link>
                                 </li>
                             </ul>
                             <div className="flex flex-col p-4 gap-3 border-t border-grey15">

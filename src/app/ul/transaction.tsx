@@ -6,6 +6,7 @@ import Dollar from "../svg/dollar"
 import Euro from "../svg/euro"
 import Bitcoin from "../svg/bitcoin"
 import Titcoin from "../svg/titcoin"
+import Image from "next/image"
 
 interface Props {
     name1: string
@@ -60,14 +61,14 @@ const Transaction:FC<Props> = ({name1, price1, name2, price2, name3, price3}) =>
                         <tr className="flex w-full">
                             <th className="flex p-[18px] flex-col items-start gap-y-[9px] rounded-tl-2xl border-[1px] border-r-0 border-grey15 w-full h-[100px]">
                                 <div className="flex items-center gap-x-[9px]">
-                                    <img src={inr.src} alt="" />
+                                    <Image src={inr.src} alt="" width={20} height={20} />
                                     <span>INR</span>
                                 </div>
                                 <p className="text-left text-[14px] font-light">Indian Rupees</p>
                             </th>
                             <th className="flex p-[18px] flex-col justify-start items-start gap-y-[9px] rounded-tr-2xl border-[1px] border-grey15 w-full h-[100px]">
                                 <div className="flex items-center gap-x-[9px]">
-                                    <img src={usd.src} alt="" />
+                                    <Image src={usd.src} alt="" width={20} height={20} />
                                     <span>USD</span>
                                 </div>
                                 <p className="text-left text-[14px] font-light">United States Dollar</p>

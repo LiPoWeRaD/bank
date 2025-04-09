@@ -1,5 +1,6 @@
 import { FC } from "react";
 import parse from 'html-react-parser';
+import Image from "next/image";
 
 interface SectionCarAboutProps {
     title: string; // Для передачи всего тега h2 с span внутри
@@ -26,10 +27,12 @@ const SectionCarAbout:FC<SectionCarAboutProps> = ({ title, text, img }) => {
                         </p>
                     </div>
                     <div className="absolute top-0 xl:top-[0px] xl:right-[50px] bottom-[50px] w-full xl:w-4/7 xl:h-[calc(130%-100px)] 2xl:h-[calc(150%-100px)]">
-                        <img 
+                        <Image 
                             src={img.src} 
                             alt="YourBank Careers Team" 
                             className="w-full h-full object-cover rounded-3xl"
+                            width={200}
+                            height={0}
                         />
                     </div>
                 </div>
