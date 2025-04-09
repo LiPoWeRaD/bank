@@ -33,10 +33,12 @@ const Header = () => {
                         <a href="/security">Security</a>
                     </li>
                 </ul>
-                <div className="flex gap-[30px]">
-                    <button>Sign in</button> 
-                    <ButtonGreen text="Login" />
-                </div>
+                <ul className="flex items-center gap-[30px]">
+                    <li>
+                        <a  href="/signIn">Sign in</a>    
+                    </li> 
+                    <ButtonGreen text="Login" href="/login" />
+                </ul>
             </section>
             {/* Бургер меню */}
                 <section className="container px-[30px] py-5 mx-auto flex justify-between items-center rounded-full border border-grey15 bg-grey11 lg:hidden relative">

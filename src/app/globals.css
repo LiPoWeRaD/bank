@@ -80,6 +80,7 @@
   --background-price: url("/price.png");
   --background-careers: url("/Careers.jpg");
   --background-abstractDesign: url("/abstractDesign.png");
+  --background-login: url("/login.png");
 }
 
 @theme {
@@ -88,6 +89,7 @@
   --bg-price: var(--background-price);
   --bg-careers: var(--background-careers);
   --bg-abstractDesign: var(--background-abstractDesign);
+  --bg-login: var(--background-login);
   --color-white90: #E4E4E7;
   --color-green60: #CAFF33;
   --color-green65: #D1FF4D;
@@ -96,6 +98,7 @@
   --color-grey15: #262626;
   --color-grey20: #1A1A1A;
   --color-grey30: #191919;
+  --color-grey35: #59595A;
   --color-grey40: #4C4C4D;
   
 }
