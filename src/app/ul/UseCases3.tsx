@@ -22,7 +22,7 @@ const UseCases3:FC<UseCasesProps> = ({ img1, title1, text1, img2, title2, text2,
         {/* Карточка 1 */}
         <div className="relative flex p-[30px] flex-col gap-y-5 bg-grey20 rounded-tl-2xl rounded-br-3xl">
             <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
-            <div className="flex items-center gap-x-[9px]">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-[9px]">
                 <img src={img1} alt={title1} />
                 <p className="text-[20px] text-center">{title1}</p>
             </div>
@@ -32,7 +32,7 @@ const UseCases3:FC<UseCasesProps> = ({ img1, title1, text1, img2, title2, text2,
         {/* Карточка 2 */}
         <div className="relative flex p-[30px] flex-col gap-y-5 bg-grey20 rounded-tl-2xl rounded-br-3xl">
             <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
-            <div className="flex items-center gap-x-[9px]">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-[9px]">
                 <img src={img2} alt={title2} />
                 <p className="text-[20px] text-center">{title2}</p>
             </div>
@@ -42,7 +42,7 @@ const UseCases3:FC<UseCasesProps> = ({ img1, title1, text1, img2, title2, text2,
         {/* Карточка 3 */}
         <div className="relative flex p-[30px] flex-col gap-y-5 bg-grey20 rounded-tl-2xl rounded-br-3xl">
             <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
-            <div className="flex items-center gap-x-[9px]">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-[9px]">
                 <img src={img3} alt={title3} />
                 <p className="text-[20px] text-center">{title3}</p>
             </div>
@@ -52,7 +52,7 @@ const UseCases3:FC<UseCasesProps> = ({ img1, title1, text1, img2, title2, text2,
         {/* Карточка 4 */}
         <div className="relative flex p-[30px] flex-col gap-y-5 bg-grey20 rounded-tl-2xl rounded-br-3xl">
             <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
-            <div className="flex items-center gap-x-[9px]">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-[9px]">
                 <img src={img4} alt={title4} />
                 <p className="text-[20px] text-center">{title4}</p>
             </div>

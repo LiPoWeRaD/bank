@@ -18,7 +18,7 @@ const SectionCarAbout:FC<SectionCarAboutProps> = ({ title, text, img }) => {
                 <div className={`absolute top-0 right-0 w-full h-full bg-[image:var(--bg-abstractDesign)] bg-no-repeat sm:bg-[length:500px_500px] [transform:scaleX(-1)]`}></div>
                 <div className="relative flex flex-col xl:flex-row xl:items-center  flex-wrap w-full gap-5 z-10">
                     <div className="relative  mt-[200px] md:mt-[300px] lg:mt-[500px] xl:mt-0 p-6 sm:p-[80px] xl:w-2/4 h-fit bg-grey20 rounded-3xl xl:rounded-tr-none xl:rounded-l-none xl:rounded-r-3xl z-10">
-                        <h2 className="mb-3.5 text-2xl md:text-5xl text-center md:text-left">
+                        <h2 className="mb-3.5 text-2xl md:text-5xl text-center lg:text-left">
                             {parse(title)}
                         </h2>
                         <p className="mb-[50px] text-sm font-light md:text-[18px]">

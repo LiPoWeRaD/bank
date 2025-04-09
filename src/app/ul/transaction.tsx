@@ -41,8 +41,8 @@ interface CardProps {
 const Transaction:FC<Props> = ({name1, price1, name2, price2, name3, price3}) => {
 
     return (
-        <div className="flex flex-col">
-            <div className="relative mb-[18px] p-[35px] flex flex-col sm:w-[515px] rounded-2xl bg-grey20"> 
+        <div className="flex flex-col items-center sm:items-start">
+            <div className="relative mb-[18px] p-[35px] flex flex-col w-[300px] sm:w-[515px] rounded-2xl bg-grey20"> 
                 <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
                 <p className="mb-[17px] text-[18px]">Your Transactions</p>
                 <div className="z-300"> 
