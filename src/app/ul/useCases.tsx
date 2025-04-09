@@ -1,5 +1,4 @@
 import { FC } from "react"
-import abstractDesign from "../assets/abstractDesign.png"
 
 interface UseCasesProps {
     img1: string

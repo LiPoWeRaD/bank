@@ -1,8 +1,13 @@
 "use client"
 
-import Llc from "./svg/llc";
-import PlusIcon from "./svg/plusIcon";
+import TestimonialsCarousel from "./components/carusel";
 import Transaction from "./ul/transaction";
+import ButtonGreen from "./ul/buttonGreen";
+import ProductsCard from "./ul/productsCard";
+import UseCases from "./ul/useCases";
+import UseCases2 from "./ul/useCases2";
+import FeaturesCards from "./ul/featuresCards";
+import Llc from "./svg/llc";
 import arrow from "../app/assets/arrow.png";
 import checkAccount from "../app/assets/chekAccount.png";
 import savingAccount from "../app/assets/savingsAccount.png";
@@ -15,15 +20,9 @@ import startupsAndEntrepreneurs from "../app/assets/startupsAndEntrepreneurs.png
 import cashFlowManagement from "../app/assets/cashFlowManagement.png";
 import businessExpansion from "../app/assets/businessExpansion.png";
 import paymentSolutions from "../app/assets/paymentSolutions.png";
-import ButtonGreen from "./ul/buttonGreen";
-import ProductsCard from "./ul/productsCard";
-import UseCases from "./ul/useCases";
-import UseCases2 from "./ul/useCases2";
-import FeaturesCards from "./ul/featuresCards";
-import FrequentlyCard from "./ul/frequentlyCard";
-import { useEffect, useState } from "react";
-import MiniArrow from "./svg/miniArrow";
-import TestimonialsCarousel from "./components/carusel";
+import PlusIcon from "./svg/plusIcon";
+import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions";
+import StartCareer from "./components/startCareer";
 
 
 const Plus = () => {
@@ -41,27 +40,6 @@ const Plus = () => {
 }
 
 export default function Home() {
-
-  const [frequentlyShadow, setFrequentlyShadow] = useState(true);
-  const [showAllCards, setShowAllCards] = useState(false);
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-    
-    // Проверяем при монтировании
-    handleResize();
-    
-    // Добавляем слушатель изменений
-    window.addEventListener('resize', handleResize);
-    
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-
   return (
     <main className="flex mt-[50px] 2xl:mt-[108px] flex-col justify-between items-center">
       <section className="container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] px-[30px] py-5 mx-auto flex flex-col xl:flex-row justify-between gap-x-[120px]">
@@ -75,8 +53,8 @@ export default function Home() {
             Empowering Your <span className="text-green60">Financial Journey</span>
           </h2>
           <p className="mb-[50px] text-sm font-light md:text-[18px]">
-          At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses 
-          to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.
+            At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses 
+            to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.
           </p>
           <ButtonGreen text="Open Account" />
         </div>
@@ -225,43 +203,7 @@ export default function Home() {
         </div>
       </section>
       <section className="container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] py-5 mx-auto flex flex-col px-[30px]">
-        <h2 className="mb-3.5 text-2xl md:text-5xl text-center md:text-left"><span className="text-green60">Frequently </span>Asked Questions</h2>
-        <p className="mb-[80px] md:w-4/5 text-sm font-light md:text-[18px] text-center md:text-left">Still you have any questions? Contact our Team via support@yourbank.com</p>
-        <div className="flex flex-wrap gap-[30px]"> 
-          <FrequentlyCard 
-            title="How do I open an account with YourBank?"
-            text={`Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.`}
-          />
-          <FrequentlyCard 
-            title="What documents do I need to provide to apply for a loan?"
-            text={`The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.`}
-          />
-          <FrequentlyCard 
-            title="How can I access my accounts online?"
-            text={`Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.`}
-            shadow = {(isDesktop && frequentlyShadow) && !showAllCards}
-          />
-          <FrequentlyCard 
-            title="Are my transactions and personal information secure?"
-            text={`At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.`}
-            shadow = {frequentlyShadow && !showAllCards}
-          />
-          {showAllCards && (
-            <>
-              <FrequentlyCard 
-                title="Can I transfer money between accounts?"
-                text={`lorem secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you`}
-                shadow = {isDesktop ? frequentlyShadow : false}
-              />
-              <FrequentlyCard 
-                title="Can I transfer money between accounts?"
-                text={`lorem secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you`}
-                shadow = {frequentlyShadow}
-              />
-            </>
-          )}
-        </div>
-        <button onClick={() => setShowAllCards(!showAllCards)} className={`flex self-center items-center px-[24px] py-[18px] gap-x-[10px] bg-grey11 border-[1px] border-grey15 rounded-full text-[18px] font-light cursor-pointer whitespace-nowrap w-fit ${showAllCards && "hidden"}`}>Load All FAQ’s<MiniArrow /></button>
+        <FrequentlyAskedQuestions />
       </section>
       <section className="container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] py-5 mx-auto flex flex-col px-[30px]">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
@@ -279,21 +221,7 @@ export default function Home() {
         <TestimonialsCarousel />
       </section>
       <section className="container mb:-[50px] md:mb-[100px] 2xl:mb-[150px] py-5 mx-auto flex flex-col px-[30px]">
-        <div className="relative flex flex-wrap p-[50px] gap-5 bg-grey11 rounded-2xl overflow-hidden">
-          {/* Фоновое изображение */}
-          <div className={`absolute top-0 right-0 w-full h-full bg-[image:var(--bg-abstractDesign)] bg-no-repeat bg-[length:350px_350px]`}></div>
-          <div className="absolute inset-0 bg-[image:var(--bg-price)] bg-[length:50%_auto] bg-right-top rounded-2xl opacity-60"></div>
-          {/* Карточки с одинаковой шириной */}
-          <div className="flex flex-col md:flex-row items-center  flex-wrap w-full gap-5 z-10">
-              <div className="flex p-[30px] flex-col flex-1 max-w-6xl">
-                <h2 className="mb-3.5 text-2xl md:text-5xl text-center md:text-left">Start your financial journey with <span className="text-green60">YourBank today!</span></h2>
-                <p className="text-center md:text-left text-sm font-light md:text-[18px]">Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service</p>
-              </div>
-              <div className="flex items-center">
-                <ButtonGreen text="Open Account" />
-              </div>
-          </div>
-        </div>
+        <StartCareer />
       </section>
     </main>
   );
