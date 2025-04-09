@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import TestimonialsCarousel from "../components/carusel"
 import Facebook2 from "../svg/facebook2"
 import Google from "../svg/google"
@@ -9,6 +10,9 @@ import ButtonGreen from "../ul/buttonGreen"
 
 
 const SignIn = () => {
+
+    const [showPassword, setShowPassword] = useState(false);
+
     return (
         <main className="flex mt-[50px] 2xl:mt-[108px] flex-col justify-between items-center">
             <section className="relative z-10 container px-[150px] py-[100px] mb:-[50px] md:mb-[100px] 2xl:mb-[150px] mx-auto flex flex-col justify-center items-center gap-x-[120px] rounded-3xl bg-grey11">
@@ -25,9 +29,9 @@ const SignIn = () => {
                         <input type="text" placeholder="Enter First Name" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
                         <input type="text" placeholder="Enter Last Name" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
                         <input type="text" placeholder="Enter your Email" className="px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]" />
-                        <div className="flex justify-between items-center px-5 py-3 rounded-full w-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]">
-                            <input type="password" placeholder="Enter your Password" className="" />
-                            <button><Union /></button>
+                        <div className="relative flex justify-between items-center   rounded-full border border-grey35 bg-grey20 text-white md:w-[calc(50%-15px)]">
+                            <input type={showPassword ? "text" : "password"} placeholder="Enter your Password" className="px-5 pr-12 py-3 w-full rounded-full"  />
+                            <button onClick={() => setShowPassword(!showPassword)} className="absolute right-5 cursor-pointer" type="button"><Union /></button>
                         </div>
                     </div>
                     <button type="submit" className="border-b-[2px] border-white text-[18px] font-light w-fit self-center cursor-pointer">Forgot Password?</button>
