@@ -128,7 +128,7 @@ const TestimonialsCarousel = () => {
                 <div className="flex gap-x-4 items-center justify-between">
                   <span className="w-full border-b-[2px] border-grey15"></span>
                   <span className="text-sm sm:text-base hidden xl:block"><Quotation /></span>
-                  <span className="text-sm sm:text-base xl:hidden w-full -mx-14 flex justify-center"><Image src={quration2.src} alt="quration" width={50} height={0} /></span> 
+                  <span className="text-sm sm:text-base xl:hidden w-full -mx-3 sm:-mx-10 md:-mx-14 flex justify-center"><Image src={quration2.src} alt="quration" width={50} height={0} /></span> 
                   <span className="w-full border-b-[2px] border-grey15"></span>
                 </div>
                 <p className="text-[16px] sm:text-[18px] text-center font-light flex-grow">
